@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 // import { useTheme } from '@material-ui/core/styles';
 
 import useStyles from './styles';
+import Form from '../Form';
 
 const MainPage = () => {
   const classes = useStyles();
@@ -25,6 +26,7 @@ const MainPage = () => {
     <div className={classes.home}>
       <p>hello Tony</p>
       <Grid container>
+      <Form />
         <Grid item lg={12} sm={6}>
           <p>item1</p>
           <Button variant="contained" color="primary" onClick={handleIncrement}>
@@ -39,8 +41,10 @@ const MainPage = () => {
           {count}
         </Grid>
       </Grid>
+
     </div>
-  );
+    
+      );
 };
 
 export default MainPage;
